@@ -1,12 +1,11 @@
 # USAGE
 
 ```
-$ git clone https://github.com/minhng92/django-rest-example-docker
-$ cd django-rest-example-docker
-$ docker-compose build
+
+docker-compose build
 # create admin user, fill in the admin user's password
-$ docker-compose run web bash -c "python manage.py makemigrations rest_example && python manage.py migrate && python manage.py createsuperuser --email admin@example.com --username admin"
-$ docker-compose up
+docker-compose run web bash -c "python manage.py makemigrations rest_example && python manage.py migrate && python manage.py createsuperuser --email admin@example.com --username admin"
+docker-compose up
 
 Go to http://localhost:8000 or http://localhost:8000/admin
 Log in with admin user:
